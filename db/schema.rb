@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_28_021332) do
+ActiveRecord::Schema.define(version: 2022_06_28_021945) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,4 +29,5 @@ ActiveRecord::Schema.define(version: 2022_06_28_021332) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "messages", "groups"
 end
